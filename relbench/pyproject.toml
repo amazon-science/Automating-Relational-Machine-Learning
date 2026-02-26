@@ -1,0 +1,57 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "relbench"
+version = "1.1.0"
+description = "RelBench: Relational Deep Learning Benchmark"
+authors = [{name = "RelBench Team", email = "relbench@cs.stanford.edu"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+]
+requires-python=">=3.10"
+keywords=[]
+dependencies=[
+	"pandas",
+	"pooch",
+	"pyarrow",
+	"numpy",
+	"duckdb",
+	"scikit-learn<=1.5",
+	"typing-extensions",
+	"datasets",
+]
+
+[project.optional-dependencies]
+full=[
+	"pytorch_frame>=0.2.3",
+	"torch_geometric",
+]
+example=[
+	"sentence-transformers",
+	"pytorch_frame[full]",
+	"torch_geometric",
+	"tqdm",
+]
+test=[
+	"pytest",
+]
+dev=[
+	"pre-commit",
+]
+
+[project.urls]
+Home = "https://relbench.stanford.edu"
+
+[tool.flit.module]
+name="relbench"
+
+[tool.pytest.ini_options]
+addopts = [
+	"--capture=no",
+	"--color=yes",
+	"-vv",
+]

@@ -1,0 +1,50 @@
+dbs:
+- db_name: "rel-avito"
+  task_name: 
+  - "user-visits"
+  - "user-clicks"
+  - "ad-ctr"
+- db_name: "rel-event"
+  task_name: 
+  - "user-repeat"
+  - "user-ignore"
+  - "user-attendance"
+- db_name: "rel-f1"
+  task_name:
+  - "driver-top3"  # Predict if each driver will qualify in the top-3 for a race within the next month
+  - "driver-dnf"  # Predict if each driver will not finish (DNF) a race in the next month
+  - "driver-position"  # Predict the average finishing position of each driver in all races over the next two months
+  - "constructor-scores-points"  # Predict whether each constructor team will score any championship points in the next three months
+  - "driver-position-change"  # Predict the average change between a driver's starting grid position and final position over the next four months
+- db_name: "rel-avs"
+  task_name: 
+  - "repeater"
+- db_name: "rel-ieeecis"
+  task_name:
+  - "transaction-fraud"
+- db_name: "rel-hm"
+  task_name: 
+  - "user-churn"
+  - "item-sales"
+- db_name: "rel-stack"
+  task_name: 
+  - "user-engagement"
+  - "user-badge"
+  - "post-votes"
+  - "user-comment-count"
+- db_name: "rel-trial"
+  task_name: 
+  - "study-adverse"
+  - "site-success"
+  - "study-outcome"
+- db_name: "rel-arxiv"
+  task_name:
+  - "paper-citation"  # Predict if a paper will get cited by other papers in the next six months
+  - "author-publication"  # Predict how many papers an author will publish in the next six months
+- db_name: "rel-ratebeer"
+  task_name:
+  - "beer-rating-churn"  # Predict if a beer will be rated by a user in the next month
+  - "user-rating-churn"  # Predict if a user will rate a beer in the next month
+  - "brewer-dormant"  # Predict if a brewer will be dormant in the next month
+  - "user-rating-count"  # Predict how many beers a user will rate in the next month
+

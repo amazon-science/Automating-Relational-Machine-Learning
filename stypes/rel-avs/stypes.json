@@ -1,0 +1,53 @@
+{
+  "transaction": {
+    "id": "numerical",
+    "chain": "numerical",
+    "dept": "categorical",
+    "category": "numerical",
+    "company": "numerical",
+    "brand": "numerical",
+    "date": "timestamp",
+    "productsize": "numerical",
+    "productmeasure": "categorical",
+    "purchasequantity": "numerical",
+    "purchaseamount": "numerical",
+    "transaction_id": "numerical",
+    "customer": "numerical"
+  },
+  "company": {
+    "id": "numerical",
+    "name": "numerical"
+  },
+  "brand": {
+    "id": "numerical",
+    "name": "numerical"
+  },
+  "category": {
+    "id": "numerical",
+    "name": "numerical"
+  },
+  "customer": {
+    "customer_id": "numerical",
+    "id": "numerical"
+  },
+  "offer": {
+    "offer": "numerical",
+    "category": "numerical",
+    "quantity": "numerical",
+    "company": "numerical",
+    "offervalue": "numerical",
+    "brand": "numerical"
+  },
+  "history": {
+    "id": "numerical",
+    "chain": "numerical",
+    "offer": "categorical",
+    "market": "numerical",
+    "offerdate": "timestamp",
+    "history_id": "numerical"
+  },
+  "chain": {
+    "id": "numerical",
+    "name": "numerical"
+  }
+}

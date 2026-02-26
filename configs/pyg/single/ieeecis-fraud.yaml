@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-ieeecis"
+    task: "transaction-fraud"
+eval:
+  datasets:
+  - name: "rel-ieeecis"
+    task: "transaction-fraud"

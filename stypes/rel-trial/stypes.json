@@ -1,0 +1,166 @@
+{
+  "conditions": {
+    "condition_id": "numerical",
+    "mesh_term": "text_embedded"
+  },
+  "facilities": {
+    "facility_id": "numerical",
+    "name": "text_embedded",
+    "city": "text_embedded",
+    "state": "text_embedded",
+    "zip": "text_embedded",
+    "country": "text_embedded"
+  },
+  "interventions": {
+    "intervention_id": "numerical",
+    "mesh_term": "text_embedded"
+  },
+  "sponsors_studies": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "sponsor_id": "numerical",
+    "lead_or_collaborator": "categorical",
+    "date": "timestamp"
+  },
+  "facilities_studies": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "facility_id": "numerical",
+    "date": "timestamp"
+  },
+  "eligibilities": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "sampling_method": "categorical",
+    "gender": "categorical",
+    "minimum_age": "text_embedded",
+    "maximum_age": "text_embedded",
+    "healthy_volunteers": "categorical",
+    "population": "text_embedded",
+    "criteria": "text_embedded",
+    "gender_description": "text_embedded",
+    "gender_based": "categorical",
+    "adult": "categorical",
+    "child": "categorical",
+    "older_adult": "categorical",
+    "date": "timestamp"
+  },
+  "designs": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "allocation": "categorical",
+    "intervention_model": "categorical",
+    "observational_model": "text_embedded",
+    "primary_purpose": "text_embedded",
+    "time_perspective": "categorical",
+    "masking": "categorical",
+    "masking_description": "text_embedded",
+    "intervention_model_description": "text_embedded",
+    "subject_masked": "categorical",
+    "caregiver_masked": "categorical",
+    "investigator_masked": "categorical",
+    "outcomes_assessor_masked": "categorical",
+    "date": "timestamp"
+  },
+  "reported_event_totals": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "event_type": "categorical",
+    "classification": "categorical",
+    "subjects_affected": "numerical",
+    "subjects_at_risk": "numerical",
+    "date": "timestamp"
+  },
+  "drop_withdrawals": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "period": "text_embedded",
+    "reason": "text_embedded",
+    "count": "numerical",
+    "date": "timestamp"
+  },
+  "sponsors": {
+    "sponsor_id": "numerical",
+    "name": "text_embedded",
+    "agency_class": "text_embedded"
+  },
+  "outcome_analyses": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "outcome_id": "numerical",
+    "non_inferiority_type": "categorical",
+    "non_inferiority_description": "text_embedded",
+    "param_type": "text_embedded",
+    "param_value": "numerical",
+    "dispersion_type": "categorical",
+    "dispersion_value": "numerical",
+    "p_value_modifier": "categorical",
+    "p_value": "numerical",
+    "ci_n_sides": "categorical",
+    "ci_percent": "numerical",
+    "ci_lower_limit": "numerical",
+    "ci_upper_limit": "numerical",
+    "ci_upper_limit_na_comment": "text_embedded",
+    "p_value_description": "text_embedded",
+    "method": "text_embedded",
+    "method_description": "text_embedded",
+    "estimate_description": "text_embedded",
+    "groups_description": "text_embedded",
+    "other_analysis_description": "text_embedded",
+    "date": "timestamp"
+  },
+  "outcomes": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "outcome_type": "text_embedded",
+    "title": "text_embedded",
+    "description": "text_embedded",
+    "time_frame": "text_embedded",
+    "population": "text_embedded",
+    "units": "text_embedded",
+    "units_analyzed": "text_embedded",
+    "dispersion_type": "text_embedded",
+    "param_type": "text_embedded",
+    "date": "timestamp"
+  },
+  "studies": {
+    "nct_id": "numerical",
+    "start_date": "timestamp",
+    "target_duration": "text_embedded",
+    "study_type": "categorical",
+    "acronym": "text_embedded",
+    "baseline_population": "text_embedded",
+    "brief_title": "text_embedded",
+    "official_title": "text_embedded",
+    "phase": "categorical",
+    "enrollment": "numerical",
+    "enrollment_type": "categorical",
+    "source": "text_embedded",
+    "number_of_arms": "numerical",
+    "number_of_groups": "numerical",
+    "has_dmc": "categorical",
+    "is_fda_regulated_drug": "categorical",
+    "is_fda_regulated_device": "categorical",
+    "is_unapproved_device": "categorical",
+    "is_us_export": "categorical",
+    "biospec_retention": "text_embedded",
+    "biospec_description": "text_embedded",
+    "source_class": "categorical",
+    "baseline_type_units_analyzed": "text_embedded",
+    "plan_to_share_ipd": "categorical",
+    "detailed_descriptions": "text_embedded",
+    "brief_summaries": "text_embedded"
+  },
+  "conditions_studies": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "condition_id": "numerical",
+    "date": "timestamp"
+  },
+  "interventions_studies": {
+    "id": "numerical",
+    "nct_id": "numerical",
+    "intervention_id": "numerical",
+    "date": "timestamp"
+  }
+}

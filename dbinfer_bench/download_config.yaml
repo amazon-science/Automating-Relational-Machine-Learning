@@ -1,0 +1,16 @@
+source: "https://data.dgl.ai/mtbench"
+datasets:
+  avs:
+    version: "20240304"
+  avs-single:
+    version: "20240304"
+  avs-r2n:
+    version: "20240304"
+  avs-r2ne:
+    version: "20240304"
+  avs-dfs-1:
+    version: "20240304"
+  avs-dfs-2:
+    version: "20240304"
+  avs-dfs-3:
+    version: "20240304"

@@ -1,0 +1,13 @@
+dbs:
+- db_name: "rel-f1"
+  task_name:
+  - "driver-wins"  # Predicts how many races each driver will win (finish first) over the next year.
+  - "constructor-scores-points"  # Predicts whether each constructor will score any championship points over the next 3 months.
+  - "driver-position-change"  # Predicts the average change in finishing position relative to starting grid position over the next 4 months (negative means gaining positions).
+- db_name: "rel-hm"
+  task_name:
+  - "customer-spending"  # Predicts the total amount each customer will spend on purchases over the next 7 days.
+  - "customer-average-price"  # Predicts the average price per item each customer will pay for purchases over the next 7 days.
+- db_name: "rel-stack"
+  task_name:
+  - "user-comment-count"  # Predicts how many comments each user will post over the next 30 days.

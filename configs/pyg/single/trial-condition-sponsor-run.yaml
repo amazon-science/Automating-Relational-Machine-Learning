@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-trial"
+    task: "condition-sponsor-run"
+eval:
+  datasets:
+  - name: "rel-trial"
+    task: "condition-sponsor-run"

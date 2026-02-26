@@ -1,0 +1,67 @@
+{
+  "posts": {
+    "Id": "numerical",
+    "OwnerUserId": "numerical",
+    "PostTypeId": "numerical",
+    "AcceptedAnswerId": "numerical",
+    "ParentId": "numerical",
+    "OwnerDisplayName": "text_embedded",
+    "Title": "text_embedded",
+    "Tags": "text_embedded",
+    "ContentLicense": "categorical",
+    "Body": "text_embedded",
+    "CreationDate": "timestamp"
+  },
+  "comments": {
+    "Id": "numerical",
+    "PostId": "numerical",
+    "UserId": "numerical",
+    "ContentLicense": "categorical",
+    "UserDisplayName": "text_embedded",
+    "Text": "text_embedded",
+    "CreationDate": "timestamp"
+  },
+  "postLinks": {
+    "Id": "numerical",
+    "RelatedPostId": "numerical",
+    "PostId": "numerical",
+    "LinkTypeId": "categorical",
+    "CreationDate": "timestamp"
+  },
+  "postHistory": {
+    "Id": "numerical",
+    "PostId": "numerical",
+    "UserId": "numerical",
+    "PostHistoryTypeId": "numerical",
+    "UserDisplayName": "text_embedded",
+    "ContentLicense": "categorical",
+    "RevisionGUID": "text_embedded",
+    "Text": "text_embedded",
+    "Comment": "text_embedded",
+    "CreationDate": "timestamp"
+  },
+  "badges": {
+    "Id": "numerical",
+    "UserId": "numerical",
+    "Class": "categorical",
+    "Name": "text_embedded",
+    "TagBased": "categorical",
+    "Date": "timestamp"
+  },
+  "votes": {
+    "Id": "numerical",
+    "UserId": "numerical",
+    "PostId": "numerical",
+    "VoteTypeId": "numerical",
+    "CreationDate": "timestamp"
+  },
+  "users": {
+    "Id": "numerical",
+    "AccountId": "numerical",
+    "DisplayName": "text_embedded",
+    "Location": "text_embedded",
+    "WebsiteUrl": "text_embedded",
+    "AboutMe": "text_embedded",
+    "CreationDate": "timestamp"
+  }
+}

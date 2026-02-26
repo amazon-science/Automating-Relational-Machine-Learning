@@ -1,0 +1,49 @@
+{
+  "Population": {
+    "age_bucket": "categorical",
+    "country_destination": "categorical",
+    "gender": "categorical",
+    "population_in_thousands": "numerical",
+    "year": "timestamp",
+    "primary_key": "numerical",
+    "population_id": "numerical"
+  },
+  "Session": {
+    "user_id": "numerical",
+    "action": "categorical",
+    "action_type": "categorical",
+    "action_detail": "categorical",
+    "device_type": "categorical",
+    "secs_elapsed": "numerical",
+    "primary_key": "numerical",
+    "session_id": "numerical"
+  },
+  "Country": {
+    "country_destination": "numerical",
+    "lat_destination": "numerical",
+    "lng_destination": "numerical",
+    "distance_km": "numerical",
+    "destination_km2": "numerical",
+    "destination_language": "text_embedded",
+    "language_levenshtein_distance": "numerical"
+  },
+  "User": {
+    "date_account_created": "timestamp",
+    "timestamp_first_active": "timestamp",
+    "date_first_booking": "timestamp",
+    "gender": "categorical",
+    "age": "numerical",
+    "signup_method": "categorical",
+    "signup_flow": "numerical",
+    "language": "categorical",
+    "affiliate_channel": "categorical",
+    "affiliate_provider": "categorical",
+    "first_affiliate_tracked": "categorical",
+    "signup_app": "categorical",
+    "first_device_type": "categorical",
+    "first_browser": "categorical",
+    "country_destination": "categorical",
+    "age_bucket": "categorical",
+    "user_id": "numerical"
+  }
+}

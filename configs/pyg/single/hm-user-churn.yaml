@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-hm"
+    task: "user-churn"
+eval:
+  datasets:
+  - name: "rel-hm"
+    task: "user-churn"

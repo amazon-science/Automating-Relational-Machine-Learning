@@ -1,0 +1,12 @@
+__pycache__
+.ipynb_checkpoints
+/examples/data
+/data
+.idea/
+venv/
+results/
+cache
+
+# pixi environments
+.pixi
+*.egg-info

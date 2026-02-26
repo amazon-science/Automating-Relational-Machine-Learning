@@ -1,0 +1,17 @@
+dbs:
+# - db_name: "rel-f1"
+#   task_name:
+#   - "driver-position"
+- db_name: "rel-trial"
+  task_name:
+  - "study-adverse"
+  - "site-success"
+- db_name: "rel-hm"
+  task_name:
+  - "item-sales"
+# - db_name: "rel-event"
+#   task_name:
+#   - "user-attendance"
+# - db_name: "rel-avito"
+#   task_name:
+#   - "ad-ctr"

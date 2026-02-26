@@ -1,0 +1,29 @@
+dbs:
+# - db_name: "rel-seznam"
+#   task_name:
+#   - "prepay"
+#   - "charge"
+- db_name: "rel-ieeecis"
+  task_name:
+  - "transaction-fraud"
+- db_name: "rel-avs"
+  task_name: 
+  - "repeater"
+- db_name: "rel-f1"
+  task_name:
+  - "results-position"
+- db_name: "rel-event"
+  task_name:
+  - "event_interest-iterested"
+- db_name: "rel-avito"
+  task_name: 
+  - "searchstream-click"
+  - "searchinfo-isuserloggedon"
+- db_name: "rel-stack"
+  task_name:
+  - "badges-class"
+# - db_name: "rel-pdns"
+#   task_name:
+#   - "domain-ip"
+# - db_name: "rel-rcdd"
+

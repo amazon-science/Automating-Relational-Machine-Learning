@@ -1,0 +1,35 @@
+{
+  "resolves_relation": {
+    "domain_node_id": "numerical",
+    "ip_node_id": "numerical",
+    "type": "categorical",
+    "timestamp": "timestamp"
+  },
+  "similar_relation": {
+    "source_domain_node_id": "numerical",
+    "target_domain_node_id": "numerical",
+    "type": "categorical",
+    "timestamp": "timestamp"
+  },
+  "ip_node": {
+    "ip_node_id": "numerical",
+    "subnet": "numerical",
+    "asn": "numerical"
+  },
+  "domain_node": {
+    "domain_node_id": "numerical",
+    "suspicious_tld": "categorical",
+    "length": "numerical",
+    "entropy": "numerical",
+    "fake_tld": "categorical",
+    "brand": "numerical",
+    "pop_keywords": "numerical",
+    "similar": "numerical",
+    "is_idn": "categorical",
+    "minus": "numerical",
+    "num_subdomains": "numerical",
+    "apex": "text_embedded",
+    "domain": "text_embedded",
+    "timestamp": "timestamp"
+  }
+}

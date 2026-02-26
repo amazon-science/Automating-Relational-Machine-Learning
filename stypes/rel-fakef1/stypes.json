@@ -1,0 +1,43 @@
+{
+  "races": {
+    "raceId": "numerical",
+    "year": "categorical",
+    "round": "numerical",
+    "name": "categorical",
+    "date": "timestamp",
+    "time": "timestamp"
+  },
+  "drivers": {
+    "driverId": "numerical",
+    "driverRef": "text_embedded",
+    "code": "categorical",
+    "forename": "text_embedded",
+    "surname": "text_embedded",
+    "dob": "timestamp",
+    "nationality": "categorical"
+  },
+  "results": {
+    "resultId": "numerical",
+    "driverId": "numerical",
+    "number": "numerical",
+    "grid": "numerical",
+    "position": "numerical",
+    "positionOrder": "numerical",
+    "points": "numerical",
+    "laps": "numerical",
+    "milliseconds": "numerical",
+    "fastestLap": "numerical",
+    "rank": "numerical",
+    "statusId": "numerical",
+    "date": "timestamp"
+  },
+  "standings": {
+    "driverStandingsId": "numerical",
+    "raceId": "numerical",
+    "driverId": "numerical",
+    "points": "numerical",
+    "position": "numerical",
+    "wins": "numerical",
+    "date": "timestamp"
+  }
+}

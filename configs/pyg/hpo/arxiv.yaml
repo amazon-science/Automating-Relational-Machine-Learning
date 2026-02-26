@@ -1,0 +1,5 @@
+dbs:
+  - db_name: rel-arxiv
+    task_name:
+    - "paper-citation"
+    - "author-publication"

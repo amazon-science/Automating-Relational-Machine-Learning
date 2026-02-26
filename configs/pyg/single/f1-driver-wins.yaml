@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-f1"
+    task: "driver-wins"
+eval:
+  datasets:
+  - name: "rel-f1"
+    task: "driver-wins"

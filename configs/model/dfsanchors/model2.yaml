@@ -1,0 +1,24 @@
+model_type: fs
+dfs_layer: 2
+torch_frame_model_cls: ft_transformer
+batch_size: 64
+eval_batch_size: 128
+negative_sampling_ratio: 5
+auto_config:
+  sample_num: 50000
+  num_trials: 10
+  temporal: 'delete_both'
+tab_nn_config:
+  hidden_size: 128
+  dropout: 0.5
+  num_layers: 2
+  attn_dropout: 0.5
+  num_heads: 1
+  normalization: layer_norm
+optimizer_config:
+  lr: 0.001
+  weight_decay: 1.0e-05
+  scheduler: expontential
+  gamma: 1.0
+loss_fn: bce
+text_to_pca: true

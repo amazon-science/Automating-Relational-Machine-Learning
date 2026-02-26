@@ -1,0 +1,136 @@
+# pixi.toml — All-pip RAPIDS (cu12, 25.10.*) + pip Torch 2.6.0 + PyG wheels
+
+[workspace]
+name = "openRFM"
+channels = ["conda-forge"]          # minimal conda usage for system libs
+platforms = ["linux-64"]
+
+[system-requirements]
+cuda = "12"                         # you have a CUDA 12-capable driver/runtime
+
+# Pip/uv resolver setup:
+# - Use PyTorch's CUDA 12.4 wheel index for torch==2.6.0+cu124
+# - Use NVIDIA's PyPI for RAPIDS cu12 wheels
+# - Use PyG wheel page that matches torch 2.6.0+cu124
+[pypi-options]
+extra-index-urls = [
+  "https://download.pytorch.org/whl/cu124",
+  "https://pypi.nvidia.com"
+]
+find-links = [
+  { url = "https://data.pyg.org/whl/torch-2.6.0+cu124.html" }
+]
+# All indexes are trusted (PyPI, PyTorch, NVIDIA) — allow best version from any
+index-strategy = "unsafe-best-match"
+
+[dependencies]
+# --- Core toolchain / native libs via conda ---
+python = "3.12.*"
+rust = "*"
+uv = "*"
+maturin = "*"
+patchelf = "*"
+graphviz = "*"
+pygraphviz = "*"
+
+# (Everything below comes from pip to keep ABI/story consistent)
+
+[pypi-dependencies]
+# --- PyTorch (pip) CUDA 12.4 build ---
+torch = "==2.6.0+cu124"
+
+# --- RAPIDS cu12 (pip) — 25.10 line ---
+cudf-cu12 = "==25.10.*"
+dask-cudf-cu12 = "==25.10.*"
+cuml-cu12 = "==25.10.*"
+cugraph-cu12 = "==25.10.*"
+nx-cugraph-cu12 = "==25.10.*"
+cuxfilter-cu12 = "==25.10.*"
+cucim-cu12 = "==25.10.*"
+pylibraft-cu12 = "==25.10.*"
+raft-dask-cu12 = "==25.10.*"
+cuvs-cu12 = "==25.10.*"
+# (rmm is pulled transitively; add `rmm-cu12 ==25.10.*` only if pip complains)
+
+# --- PyTorch Geometric (pip) + CUDA extensions matching Torch 2.6.0+cu124 ---
+torch-geometric = "*"
+pyg_lib = "*"
+torch_scatter = "*"
+torch_sparse = "*"
+torch_cluster = "*"
+torch_spline_conv = "*"
+
+# --- Your existing PyPI deps ---
+numpy = "*"
+pandas = "*"
+tqdm = "*"
+pyarrow = "*"
+pillow = "*"
+pooch = "*"
+duckdb = "*"
+scikit-learn = "<1.6.0"
+typing-extensions = "*"
+pytorch-lightning = "*"
+hydra-core = "*"
+maturin_import_hook = "*"
+ml_dtypes = "*"
+orjson = "*"
+gdown = "*"
+polars = "*"
+einops = "*"
+wandb = "*"
+loguru = "*"
+sentence-transformers = "*"
+strictfire = "*"
+pympler = "*"
+ipdb = "*"
+matplotlib = "*"
+seaborn = "*"
+datasets = "*"
+
+
+
+# --- DFS / feature engineering ---
+featuretools = "*"
+woodwork = "*"
+setuptools = "<75"  # woodwork needs pkg_resources, removed in setuptools 75+
+sqlglot = "*"
+sql-formatter = "*"
+
+# --- ML models & HPO ---
+tabpfn = "*"
+lightgbm = "*"
+xgboost = "*"
+catboost = "*"
+optuna = "*"
+hyperopt = "*"
+anthropic = "*"
+boto3 = "*"
+
+# --- Core scientific / data ---
+scipy = "*"
+pydantic = "*"
+sqlalchemy = "*"
+torchmetrics = "*"
+transformers = "*"
+psutil = "*"
+python-dotenv = "*"
+cupy-cuda12x = "*"
+
+# --- Local editable packages ---
+pytorch-frame = { path = "./pytorch-frame", editable = true }
+relbench = { path = "./relbench", editable = true }
+rustler = { path = "./rustler", editable = true }
+contextgnn = { path = "./ContextGNN", editable = true }
+
+[environments]
+iclr = { solve-group = "default" }
+
+[tasks]
+# Rebuild rustler after making changes to Rust code
+rt-build = """
+maturin develop --manifest-path rustler/Cargo.toml --release --uv && \
+cp rustler/target/release/librustler.so .pixi/envs/default/lib/python3.12/site-packages/rustler/rustler.abi3.so
+"""
+# Quick rebuild without reinstall (just compiles)
+rt-compile = "cargo build --release --manifest-path rustler/Cargo.toml"

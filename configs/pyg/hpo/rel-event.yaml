@@ -1,0 +1,6 @@
+dbs:
+- db_name: "rel-event"
+  task_name: 
+  - "user-repeat"
+  - "user-ignore"
+  - "user-attendance"

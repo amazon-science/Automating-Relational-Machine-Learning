@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-hm"
+    task: "customer-average-price"
+eval:
+  datasets:
+  - name: "rel-hm"
+    task: "customer-average-price"

@@ -1,0 +1,26 @@
+{
+  "client": {
+    "client_id": "numerical",
+    "kraj": "categorical",
+    "obor": "categorical"
+  },
+  "dobito": {
+    "client_id": "numerical",
+    "date": "timestamp",
+    "kc_dobito": "numerical",
+    "dobito_pk": "numerical"
+  },
+  "probehnuto": {
+    "client_id": "numerical",
+    "date": "timestamp",
+    "sluzba": "categorical",
+    "kc_proklikano": "numerical",
+    "probehnuto_pk": "numerical"
+  },
+  "prohehnuto_mimo_penezenku": {
+    "client_id": "numerical",
+    "date": "timestamp",
+    "probehla_inzerce_mimo_penezenku": "categorical",
+    "probehnuto_mimo_penezenku_pk": "numerical"
+  }
+}

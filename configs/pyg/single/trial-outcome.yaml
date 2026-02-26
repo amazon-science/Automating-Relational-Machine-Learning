@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-trial"
+    task: "study-outcome"
+eval:
+  datasets:
+  - name: "rel-trial"
+    task: "study-outcome"

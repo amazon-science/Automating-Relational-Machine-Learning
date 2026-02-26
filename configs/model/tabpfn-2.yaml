@@ -1,0 +1,16 @@
+model_type: fs
+dfs_layer: 2
+torch_frame_model_cls: tabpfn
+batch_size: 64
+eval_batch_size: 128
+negative_sampling_ratio: 5
+auto_config:
+  max_train_samples: null
+  training_sample_selection_strategy: 'random'
+  num_trials: 2
+  temporal: 'delete_both'
+optimizer_config:
+  lr: 0.001
+  weight_decay: 1.0e-05
+  scheduler: expontential
+  gamma: 0.8

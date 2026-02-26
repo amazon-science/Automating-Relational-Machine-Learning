@@ -1,0 +1,60 @@
+{
+  "AdsInfo": {
+    "AdID": "numerical",
+    "LocationID": "numerical",
+    "CategoryID": "numerical",
+    "Price": "numerical",
+    "Title": "text_embedded",
+    "IsContext": "numerical"
+  },
+  "PhoneRequestsStream": {
+    "UserID": "numerical",
+    "IPID": "numerical",
+    "AdID": "numerical",
+    "PhoneRequestDate": "timestamp"
+  },
+  "VisitStream": {
+    "UserID": "numerical",
+    "IPID": "numerical",
+    "AdID": "numerical",
+    "ViewDate": "timestamp"
+  },
+  "Category": {
+    "CategoryID": "numerical",
+    "Level": "numerical",
+    "ParentCategoryID": "numerical",
+    "SubcategoryID": "numerical"
+  },
+  "UserInfo": {
+    "UserID": "numerical",
+    "UserAgentID": "numerical",
+    "UserAgentOSID": "numerical",
+    "UserDeviceID": "numerical",
+    "UserAgentFamilyID": "numerical"
+  },
+  "Location": {
+    "LocationID": "numerical",
+    "Level": "numerical",
+    "RegionID": "numerical",
+    "CityID": "numerical"
+  },
+  "SearchInfo": {
+    "UserID": "numerical",
+    "SearchID": "numerical",
+    "SearchDate": "timestamp",
+    "IPID": "numerical",
+    "IsUserLoggedOn": "numerical",
+    "SearchQuery": "text_embedded",
+    "LocationID": "numerical",
+    "CategoryID": "numerical"
+  },
+  "SearchStream": {
+    "SearchID": "numerical",
+    "AdID": "numerical",
+    "Position": "numerical",
+    "ObjectType": "numerical",
+    "HistCTR": "numerical",
+    "IsClick": "numerical",
+    "SearchDate": "timestamp"
+  }
+}

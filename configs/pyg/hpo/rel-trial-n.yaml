@@ -1,0 +1,6 @@
+dbs:
+- db_name: "rel-trial"
+  task_name: 
+  - "study-adverse"
+  # - "site-success"
+  # - "study-outcome"

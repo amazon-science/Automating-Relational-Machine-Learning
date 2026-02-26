@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-hm"
+    task: "customer-spending"
+eval:
+  datasets:
+  - name: "rel-hm"
+    task: "customer-spending"

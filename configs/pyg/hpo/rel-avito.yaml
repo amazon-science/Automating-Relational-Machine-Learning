@@ -1,0 +1,7 @@
+dbs:
+- db_name: "rel-avito"
+  task_name: 
+  - "user-visits"
+  - "user-clicks"
+  - "ad-ctr"
+  - "user-ad-visit"

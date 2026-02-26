@@ -1,0 +1,87 @@
+{
+  "constructor_results": {
+    "constructorResultsId": "numerical",
+    "raceId": "numerical",
+    "constructorId": "numerical",
+    "points": "numerical",
+    "date": "timestamp"
+  },
+  "drivers": {
+    "driverId": "numerical",
+    "driverRef": "text_embedded",
+    "code": "text_embedded",
+    "forename": "text_embedded",
+    "surname": "text_embedded",
+    "dob": "timestamp",
+    "nationality": "text_embedded"
+  },
+  "races": {
+    "raceId": "numerical",
+    "year": "categorical",
+    "round": "numerical",
+    "circuitId": "numerical",
+    "name": "text_embedded",
+    "date": "timestamp",
+    "time": "timestamp"
+  },
+  "constructors": {
+    "constructorId": "numerical",
+    "constructorRef": "text_embedded",
+    "name": "text_embedded",
+    "nationality": "text_embedded"
+  },
+  "results": {
+    "resultId": "numerical",
+    "raceId": "numerical",
+    "driverId": "numerical",
+    "constructorId": "numerical",
+    "number": "numerical",
+    "grid": "numerical",
+    "position": "numerical",
+    "positionOrder": "numerical",
+    "points": "numerical",
+    "laps": "numerical",
+    "milliseconds": "numerical",
+    "fastestLap": "numerical",
+    "rank": "numerical",
+    "statusId": "categorical",
+    "date": "timestamp"
+  },
+  "circuits": {
+    "circuitId": "numerical",
+    "circuitRef": "text_embedded",
+    "name": "text_embedded",
+    "location": "text_embedded",
+    "country": "text_embedded",
+    "lat": "numerical",
+    "lng": "numerical",
+    "alt": "numerical"
+  },
+  "qualifying": {
+    "qualifyId": "numerical",
+    "raceId": "numerical",
+    "driverId": "numerical",
+    "constructorId": "numerical",
+    "number": "numerical",
+    "position": "numerical",
+    "date": "timestamp"
+  },
+  "standings": {
+    "driverStandingsId": "numerical",
+    "raceId": "numerical",
+    "driverId": "numerical",
+    "points": "numerical",
+    "position": "numerical",
+    "wins": "numerical",
+    "date": "timestamp"
+  },
+  "constructor_standings": {
+    "constructorStandingsId": "numerical",
+    "raceId": "numerical",
+    "constructorId": "numerical",
+    "points": "numerical",
+    "position": "numerical",
+    "wins": "numerical",
+    "date": "timestamp"
+  }
+}

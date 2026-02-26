@@ -1,0 +1,45 @@
+{
+  "article": {
+    "article_id": "numerical",
+    "product_code": "numerical",
+    "prod_name": "text_embedded",
+    "product_type_no": "numerical",
+    "product_type_name": "text_embedded",
+    "product_group_name": "text_embedded",
+    "graphical_appearance_no": "numerical",
+    "graphical_appearance_name": "text_embedded",
+    "colour_group_code": "numerical",
+    "colour_group_name": "text_embedded",
+    "perceived_colour_value_id": "numerical",
+    "perceived_colour_value_name": "text_embedded",
+    "perceived_colour_master_id": "numerical",
+    "perceived_colour_master_name": "text_embedded",
+    "department_no": "numerical",
+    "department_name": "text_embedded",
+    "index_code": "categorical",
+    "index_name": "categorical",
+    "index_group_no": "categorical",
+    "index_group_name": "categorical",
+    "section_no": "numerical",
+    "section_name": "text_embedded",
+    "garment_group_no": "categorical",
+    "garment_group_name": "categorical",
+    "detail_desc": "text_embedded"
+  },
+  "customer": {
+    "customer_id": "numerical",
+    "FN": "categorical",
+    "Active": "categorical",
+    "club_member_status": "text_embedded",
+    "fashion_news_frequency": "categorical",
+    "age": "numerical",
+    "postal_code": "text_embedded"
+  },
+  "transactions": {
+    "t_dat": "timestamp",
+    "customer_id": "numerical",
+    "article_id": "numerical",
+    "price": "numerical",
+    "sales_channel_id": "categorical"
+  }
+}

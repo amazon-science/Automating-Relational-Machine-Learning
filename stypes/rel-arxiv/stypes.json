@@ -1,0 +1,35 @@
+{
+  "papers": {
+    "Paper_ID": "numerical",
+    "arXiv_Code": "text_embedded",
+    "Title": "text_embedded",
+    "Abstract": "text_embedded",
+    "Submission_Date": "timestamp",
+    "DOI": "text_embedded",
+    "Primary_Category_ID": "numerical"
+  },
+  "categories": {
+    "Category_ID": "numerical",
+    "Category": "numerical"
+  },
+  "citations": {
+    "Paper_ID": "numerical",
+    "References_Paper_ID": "numerical",
+    "Submission_Date": "timestamp"
+  },
+  "paperCategories": {
+    "Paper_ID": "numerical",
+    "Category_ID": "numerical",
+    "Submission_Date": "timestamp"
+  },
+  "authors": {
+    "Author_ID": "numerical",
+    "Name": "text_embedded",
+    "ORCID": "text_embedded"
+  },
+  "paperAuthors": {
+    "Paper_ID": "numerical",
+    "Author_ID": "numerical",
+    "Submission_Date": "timestamp"
+  }
+}

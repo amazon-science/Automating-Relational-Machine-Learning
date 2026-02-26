@@ -1,0 +1,10 @@
+pretrain:
+  datasets:
+  - name: "rel-stack"
+    task: "user-post-comment"
+    path: "/egr/research-dselab/chenzh85/db/summer25/output/data/rel-stack/final"
+eval:
+  datasets:
+  - name: "rel-stack"
+    task: "user-post-comment"
+    path: "/egr/research-dselab/chenzh85/db/summer25/output/data/rel-stack/final"

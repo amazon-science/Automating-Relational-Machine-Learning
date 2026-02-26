@@ -1,0 +1,31 @@
+model_type: rdl
+encoder_num_layers: 4
+channels: 64
+torch_frame_model_cls: resnet
+batch_size: 32
+eval_batch_size: 256
+num_negative_samples: 1
+share_same_time: true
+gnn_config:
+  pre_sf: zero_learn
+  post_sf: none
+  hidden_channels: 64
+  num_heads: 1
+  dropout: 0.0
+  norm: layernorm
+  aggregation: sum
+  jk: false
+  skip_connection: false
+  mpnn_type: sage
+  mpnn_design_choice: sage
+  loss_fn: logistic
+sampler_config:
+  temporal: last
+  num_neighbors: 128
+  num_layers: 2
+  loader_type: node
+optimizer_config:
+  lr: 0.0038
+  weight_decay: 0
+  scheduler: expontential
+  gamma: 0.906

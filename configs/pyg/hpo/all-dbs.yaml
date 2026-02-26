@@ -1,0 +1,50 @@
+dbs:
+- db_name: "rel-ieeecis"
+  task_name:
+  - "transaction-fraud"
+- db_name: "rel-f1"
+  task_name:
+  - "driver-dnf"
+  - "driver-top3"
+  - "driver-position"
+- db_name: "rel-avito"
+  task_name: 
+  - "user-visits"
+  - "user-clicks"
+  - "ad-ctr"
+- db_name: "rel-trial"
+  task_name: 
+  - "study-adverse"
+  - "site-success"
+  - "study-outcome"
+- db_name: "rel-stack"
+  task_name: 
+  - "user-engagement"
+  - "user-badge"
+  - "post-votes"
+- db_name: "rel-hm"
+  task_name: 
+  - "user-churn"
+  - "item-sales"
+- db_name: "rel-event"
+  task_name: 
+  - "user-repeat"
+  - "user-ignore"
+  - "user-attendance"
+### put link prediction down here
+- db_name: "rel-hm"
+  task_name: 
+    - "user-item-purchase"
+- db_name: "rel-stack"
+  task_name: 
+  - "user-post-comment"
+  - "post-post-related"
+- db_name: "rel-avito"
+  task_name: 
+  - "user-ad-visit"
+- db_name: "rel-trial"
+  task_name: 
+  - "condition-sponsor-run"
+  - "site-sponsor-run"
+
+

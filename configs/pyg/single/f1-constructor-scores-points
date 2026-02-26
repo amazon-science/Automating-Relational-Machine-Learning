@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-f1"
+    task: "constructor-scores-points"
+eval:
+  datasets:
+  - name: "rel-f1"
+    task: "constructor-scores-points"

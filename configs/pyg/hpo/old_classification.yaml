@@ -1,0 +1,23 @@
+dbs:
+- db_name: "rel-f1"
+  task_name:
+  - "driver-dnf"
+  - "driver-top3"
+- db_name: "rel-hm"
+  task_name:
+  - "user-churn"
+- db_name: "rel-trial"
+  task_name:
+  - "study-outcome"
+- db_name: "rel-stack"
+  task_name:
+  - "user-badge"
+  - "user-engagement"
+- db_name: "rel-event"
+  task_name:
+  - "user-repeat"
+  - "user-ignore"
+- db_name: "rel-avito"
+  task_name:
+  - "user-visits"
+  - "user-clicks"

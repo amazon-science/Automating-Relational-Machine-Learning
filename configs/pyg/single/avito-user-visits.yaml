@@ -1,0 +1,8 @@
+pretrain:
+  datasets:
+  - name: "rel-avito"
+    task: "user-visits"
+eval:
+  datasets:
+  - name: "rel-avito"
+    task: "user-visits"

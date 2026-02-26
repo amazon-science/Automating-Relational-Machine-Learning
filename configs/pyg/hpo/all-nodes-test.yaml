@@ -1,0 +1,50 @@
+dbs:
+# - db_name: "rel-seznam"
+#   task_name:
+#   - "prepay"
+#   - "charge"
+# - db_name: "rel-avito"
+#   task_name: 
+#   - "user-visits"
+#   - "user-clicks"
+#   - "ad-ctr"
+# - db_name: "rel-event"
+#   task_name: 
+#   - "user-repeat"
+#   - "user-ignore"
+#   - "user-attendance"
+- db_name: "rel-f1"
+  task_name:
+  - "driver-position"
+  - "driver-top3"
+  - "driver-dnf"
+#   - "results-position"
+# - db_name: "rel-avs"
+#   task_name: 
+#   - "repeater"
+# - db_name: "rel-ieeecis"
+#   task_name:
+#   - "transaction-fraud"
+# - db_name: "rel-hm"
+#   task_name: 
+#   - "user-churn"
+#   - "item-sales"
+#   # - "event_interest-iterested"
+# # - db_name: "rel-pdns"
+# #   task_name:
+# #   - "domain-ip"
+# - db_name: "rel-stack"
+#   task_name: 
+#   - "user-engagement"
+#   - "user-badge"
+#   - "post-votes"
+#   # - "badges-class"
+# - db_name: "rel-trial"
+#   task_name: 
+#   - "study-adverse"
+#   - "site-success"
+#   - "study-outcome"
+
+  # - "searchstream-click"
+  # - "searchinfo-isuserloggedon"
+

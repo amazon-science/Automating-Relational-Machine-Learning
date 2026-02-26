@@ -1,0 +1,24 @@
+cache_dir: "cache_data"
+embed_device: "cuda"
+seed: 42
+max_steps_per_epoch: 500
+num_workers: 0
+epochs: 20
+early_stop: 5
+eval_only: false
+wandb: false
+wandb_project: "dfs-search-2"
+## you can choose "none", "distribution", "inges" here
+feature_transform: "none"
+text_encoder: "glove" 
+eval_in_train: 5
+resnet_transform: false
+share_same_time: true
+val_sample_size: 2000
+test_sample_size: -1
+## whether to use the full dataset for final evaluation
+last_full: true
+result_db_name: "dfs-search-2"
+db_backend: "sqlite"
+db_location: "./swap_db"
+db_name: "swap"

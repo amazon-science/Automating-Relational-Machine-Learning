@@ -1,0 +1,6 @@
+dbs:
+- db_name: "rel-hm"
+  task_name: 
+  - "user-item-purchase"
+  - "user-churn"
+  - "item-sales"

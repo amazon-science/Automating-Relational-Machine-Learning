@@ -1,0 +1,11 @@
+dbs:
+# - db_name: "rel-ieeecis"
+#   task_name:
+#   - "transaction-fraud"
+- db_name: "rel-f1"
+  task_name:
+  - "driver-dnf"
+  - "driver-top3"
+- db_name: "rel-trial"
+  task_name: 
+  - "study-adverse"
