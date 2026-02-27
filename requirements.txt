@@ -203,7 +203,7 @@ psutil==6.1.0
 py-spy==0.4.0
 py4j==0.10.9.9
 pyarrow==18.0.0
-pyasn1==0.6.1
+pyasn1==0.6.2
 pyasn1_modules==0.4.2
 pybase64==1.4.1
 pybind11==2.13.6
