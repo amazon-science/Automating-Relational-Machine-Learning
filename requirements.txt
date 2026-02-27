@@ -222,7 +222,7 @@ python-slugify==8.0.4
 pytorch-metric-learning==2.8.1
 pytorch-warmup==0.2.0
 pytz==2024.2
-ray==2.44.1
+ray==2.54.0
 rdkit==2024.3.5
 referencing==0.36.2
 regex==2024.9.11
