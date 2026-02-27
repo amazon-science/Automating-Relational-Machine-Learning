@@ -291,7 +291,7 @@ utilsforecast==0.2.10
 uvicorn==0.34.3
 uvloop==0.21.0
 vector-quantize-pytorch==1.18.5
-virtualenv==20.29.1
+virtualenv==20.36.1
 virtualenv-clone==0.5.7
 wandb==0.18.5
 wasabi==1.1.3
