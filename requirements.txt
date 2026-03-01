@@ -12,7 +12,7 @@ anyio==4.9.0
 appdirs==1.4.4
 argcomplete==3.5.3
 attrs==24.2.0
-awscli==1.40.37
+awscli==1.44.38
 axial_positional_embedding==0.3.4
 backoff==2.2.1
 bcrypt==4.3.0
