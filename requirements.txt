@@ -132,7 +132,7 @@ matplotlib==3.9.2
 mdit-py-plugins==0.4.2
 mdurl==0.1.2
 memory-profiler==0.61.0
-memray==1.17.1
+memray==1.19.2
 mlforecast==0.13.6
 mmh3==5.1.0
 model-index==0.1.11
