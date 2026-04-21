@@ -217,7 +217,7 @@ pymongo==4.13.2
 Pympler==1.1
 PyPika==0.48.9
 pytesseract==0.3.13
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 python-slugify==8.0.4
 pytorch-metric-learning==2.8.1
 pytorch-warmup==0.2.0
